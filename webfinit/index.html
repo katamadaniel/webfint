@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+<head>
+<meta charset ="UTF-8" >
+<title>Webfinit |HOME</title>
+<meta name="description" content="website description" />
+<meta name="keywords" content="website keywords, website keywords" />
+<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+<link rel="stylesheet" type="text/css" href="styles/style.css" title="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/bootstrap.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/large.css">
+<link rel="stylesheet" href="css/medium.css">
+<script type="text/javascript" src='javascript.js'></script>
+<script type="text/javascript" src='menuToggle.js'></script>
+<link rel="icon" type="image/png" href="images/wefinit-favicon.png">
+</head>
+<body>
+    <div class="container">
+    <div id= "container-fluid">
+    <div id="head">
+        <div class="nav">
+           <section class="column small-12 medium-6 large-3">
+            <img src="images/webfinit-logo.png" style="width:100px;height:80px;border:0">
+            <div id="menu">
+                <ul>
+                    <li class="selected"><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <div class="dropbtn"><a href=#>Catalogue</a>
+                        <ul>
+                            <link rel="stylesheet" type="text/css" href="css/style.css">
+                            <div class="dropdown-content">            
+                        <li><a href="websites.html">Web Design</a></li>
+                        <li><a href="graphics.html">Graphic Design</a></li>
+                        <li><a href="videos.html">Video Production</a></li>
+                        <li><a href="modeling.html">3D animation</a></li>
+                        <li><a href="consultation.html">Consultation</a></li>
+                        </div>
+                        </ul>
+                    </div>
+                    </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </section>   
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <h1>Webfinit Designs</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 10</div>
+          <img src="images/kakashi-white(hoodie-front).jpg" style="width:100%">
+          <div class="text">Hoodie-front</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 10</div>
+          <img src="images/kakashi-white(hoodie-back).jpg" style="width:100%">
+          <div class="text">Hoodie-back</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 10</div>
+          <img src="images/kakashi hoodie(blue).jpg" style="width:100%">
+          <div class="text">Blue hoodie</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="images/kakashi-white(long).jpg" style="width:100%">
+            <div class="text">Long sleeve T-shirts</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="images/kakashi-white.jpg" style="width:100%">
+            <div class="text">Short-sleeve T-shirts</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="images/kakashi-black-tee.jpg" style="width:100%">
+            <div class="text">Black T-shirt</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="images/kakashi-blue-tee.jpg" style="width:100%">
+            <div class="text">Blue T-shirt</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="images/itachi.jpg" style="width:100%" >
+            <div class="text">White & Red</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="images/itachi2.jpg" style="width:100%">
+            <div class="text">White & Black</div>
+          </div>
+          <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="images/multiverse.jpg" style="width:100%">
+            <div class="text">Pink T-shirt</div>
+          </div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span> 
+          <span class="dot" onclick="currentSlide(9)"></span> 
+          <span class="dot" onclick="currentSlide(10)"></span> 
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+            if (slideIndex > slides.length) {slideIndex    = 1}
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4000);// Change image every 4 seconds
+            }
+            </script>
+                    <div class="side-content">
+            <h3><u>Special deals and offers</u></h3>
+            <img src="images/webfinit-logo.png" width="100" height="100">
+            <hr>
+            <p>  <h4>Our Motto</h4>
+                <h5>You see it, we make it!</h5>
+                We are the best in the business when it comes to making your vision and idea into a reality.</p>
+            <P>We are the best in the business when it comes to making your vision and idea into a reality. </P>
+        </div>
+    <div id="content">
+
+<h2>Welcome to webfinit, the home of visual arts and design.</h2>
+<h3>What do we offer you?</h3>
+    <table id="services" width="50%">
+        <th>
+            <tr><h4>OUR SERVICES</h4></tr>
+        </th>
+        <tr>
+            <th>Categories</th>
+            <th>Pricing</th>
+        </tr>
+        <tr>
+            <td>Web design & Development</td>
+            <td>Ksh.15,000/= to Ksh.200,000/=</td>
+        </tr>
+        <tr>
+            <td> Branding design</td>
+            <td>Ksh.5,000/= to Ksh.30,000/=</td>
+        </tr>
+        <tr>
+            <td>Graphic design</td>
+            <td>Ksh.3,000/= to Ksh.20,000/=</td>
+        </tr>
+        <tr>
+            <td>Video production</td>
+            <td>Ksh.10,000/= to Ksh.120,000/=</td>
+        </tr>
+        <tr>
+            <td>3D modelling and animation</td>
+            <td>Ksh.15,000/= to Ksh. 200,000/=</td>
+        </tr>
+        <tr>
+            <td>Advertisement</td>
+            <td> Ksh.5,000/= to Ksh.50,000/=</td>
+        </tr>
+
+    </table>
+</div>
+
+<div id="footer">
+    <div>
+       <p>All rightS reversed.&copy;2022</p> 
+    </div>
+</div>
+</div>
+</body>
+</html> 
